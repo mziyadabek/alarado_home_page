@@ -51,6 +51,24 @@ body{
 .nav-links a:hover{
     color: var(--h1c);
 }
+.nav-links2 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #909193;
+    font-size: 50px;
+}
+.nav-links2{
+    list-style: none;
+    
+}
+.nav-links2 a:hover{
+    color: var(--h1c);
+}
+.ximg{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 .content{
     display: flex;
     justify-content: space-between;
@@ -132,10 +150,37 @@ body{
     border: 2px solid black;
     border-radius: 50%;
 }
+.theme3{
+    display: flex;
+    background-color:#223344;
+    border-radius: 30px;
+    align-items: center;
+    max-width: 12%;
+    gap: 5px;
+    
+}
 footer{
     height: 100px;
 }
-
+.off-screen-menu {
+    background-color: var(--white);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;   
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.active {
+    right: 0;
+}
 
 @media (max-width: 1024px) {
     .content{
